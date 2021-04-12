@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const anchors = document.querySelectorAll('a[href*="#"]')
+  const anchors = document.querySelectorAll('a[href*="index.php#"]');
 
   for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
-      e.preventDefault()
+      e.preventDefault();
 
-      const blockID = anchor.getAttribute('href').substr(1)
+      const blockID = anchor.getAttribute('href').substr(1);
 
       document.getElementById(blockID).scrollIntoView({
         behavior: 'smooth',

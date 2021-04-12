@@ -467,7 +467,8 @@
     <div class="container">
       <div class="title">Контакты</div>
       <div class="contacts__inner">
-        <form action="" class="contacts__form form">
+        <form method="POST" action="./mail.php" class="contacts__form form">
+            <input type="hidden" name="formName" value="Контакты">
           <div class="contacts__form-item form-item">
             <div class="form-item-title">
               Оставить заявку
@@ -475,7 +476,7 @@
             <div class="form-item-step">
               Шаг:01<span>/04</span>
             </div>
-            <input type="text" placeholder="Ваше имя">
+            <input name="name" type="text" placeholder="Ваше имя">
           </div>
           <div class="contacts__form-item form-item">
             <div class="form-item-title">
@@ -484,7 +485,7 @@
             <div class="form-item-step">
               Шаг:02<span>/04</span>
             </div>
-            <input type="text" placeholder="Ваша почта">
+            <input name="email" type="text" placeholder="Ваша почта">
           </div>
           <div class="contacts__form-item form-item">
             <div class="form-item-title">
@@ -493,7 +494,7 @@
             <div class="form-item-step">
               Шаг:03<span>/04</span>
             </div>
-            <input type="text" id="phone-input" placeholder="Ваш телефон">
+            <input name="tel" type="text" id="phone-input" placeholder="Ваш телефон">
             <div class="num__block">
               <div class="num__block-item" data-num="1">1</div>
               <div class="num__block-item" data-num="2">2</div>
